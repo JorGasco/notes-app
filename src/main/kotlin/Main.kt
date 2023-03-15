@@ -1,14 +1,16 @@
 import java.lang.System.exit
-import java.util.*
+
+import utils.ScannerInput
+
 
 fun main(args: Array<String>) {
     runMenu()
 }
 
-val scanner = Scanner(System.`in`)
+
 
 fun mainMenu() : Int {
-    print(""" 
+    return ScannerInput.readNextInt(""" 
          > ----------------------------------
          > |        NOTE KEEPER APP         |
          > ----------------------------------
@@ -21,8 +23,8 @@ fun mainMenu() : Int {
          > |   0) Exit                      |
          > ----------------------------------
          > ==>> """.trimMargin(">"))
-    return scanner.nextInt()
 }
+
 
 
 fun runMenu() {
@@ -34,7 +36,8 @@ fun runMenu() {
             3  -> updateNote()
             4  -> deleteNote()
             0  -> exitApp()
-            else -> println("Invalid option entered: " + option)
+            else -> println("Invalid option entered: ${option}")
+
         }
     } while (true)
 }
