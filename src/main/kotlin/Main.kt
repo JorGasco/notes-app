@@ -1,6 +1,9 @@
 import java.lang.System.exit
 import java.util.*
 
+fun main(args: Array<String>) {
+    runMenu()
+}
 
 val scanner = Scanner(System.`in`)
 
