@@ -1,3 +1,7 @@
+import java.lang.System.exit
+import java.util.*
+
+
 val scanner = Scanner(System.`in`)
 
 fun mainMenu() : Int {
