@@ -46,3 +46,8 @@ fun updateNote(){
 fun deleteNote(){
     println("You chose Delete Note")
 }
+
+fun exitApp(){
+    println("Exiting...bye")
+    exit(0)
+}
