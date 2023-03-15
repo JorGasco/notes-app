@@ -31,3 +31,8 @@ fun runMenu() {
     } while (true)
 }
 
+fun addNote(){
+    println("You chose Add Note")
+}
+
+
