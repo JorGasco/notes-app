@@ -42,3 +42,7 @@ fun listNotes(){
 fun updateNote(){
     println("You chose Update Note")
 }
+
+fun deleteNote(){
+    println("You chose Delete Note")
+}
