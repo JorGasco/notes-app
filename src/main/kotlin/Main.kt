@@ -17,3 +17,17 @@ fun mainMenu() : Int {
     return scanner.nextInt()
 }
 
+fun runMenu() {
+    do {
+        val option = mainMenu()
+        when (option) {
+            1  -> addNote()
+            2  -> listNotes()
+            3  -> updateNote()
+            4  -> deleteNote()
+            0  -> exitApp()
+            else -> println("Invalid option entered: " + option)
+        }
+    } while (true)
+}
+
