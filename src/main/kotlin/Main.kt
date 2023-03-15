@@ -38,3 +38,7 @@ fun addNote(){
 fun listNotes(){
     println("You chose List Notes")
 }
+
+fun updateNote(){
+    println("You chose Update Note")
+}
