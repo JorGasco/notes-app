@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
+
 class NoteAPITest {
 
     private var learnKotlin: Note? = null
@@ -86,5 +87,4 @@ class NoteAPITest {
             assertTrue(notesString.contains("summer holiday"))
         }
     }
-
 }
