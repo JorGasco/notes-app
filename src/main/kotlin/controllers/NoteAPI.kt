@@ -107,7 +107,7 @@ class NoteAPI {
         }
     }
 
-    fun numberOfNotesByPriority(): Int {
+    fun numberOfNotesByPriority(priority: Int): Int {
         //helper method to determine how many notes there are of a specific priority
         var counter = 0
         for (note in notes) {
@@ -117,6 +117,13 @@ class NoteAPI {
         }
         return counter
     }
+
+    fun deleteNote(indexToDelete: Int): Note? {
+        return if (isValidListIndex(indexToDelete, notes)) {
+            notes.removeAt(indexToDelete)
+        } else null
+    }
+
 
 }
 
