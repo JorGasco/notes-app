@@ -2,14 +2,16 @@
 
 import controllers.NoteAPI
 import models.Note
-import persistence.XMLSerializer
+import persistence.JSONSerializer
 import utils.ScannerInput
 import utils.ScannerInput.readNextInt
 import utils.ScannerInput.readNextLine
 import java.io.File
 import java.lang.System.exit
 
-private val noteAPI = NoteAPI(XMLSerializer(File("notes.xml")))
+//private val noteAPI = NoteAPI(XMLSerializer(File("notes.xml")))
+private val noteAPI = NoteAPI(JSONSerializer(File("notes.json")))
+
 
 
 
